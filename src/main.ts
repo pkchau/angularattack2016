@@ -4,4 +4,4 @@ import { AppComponent } from './app';
 if (process.env.ENV === 'production') {
   enableProdMode();
 }
-bootstrap(AppComponent, []);
+bootstrap(OverviewPage,[]);
