@@ -1,4 +1,28 @@
 body {
-    background: #0147A7;
-    color: #fff;
+	#header {
+		position: fixed;
+		width: 100%;
+		background: white;
+	}
+
+	.trippin-logo {
+		font-family: 'Biryani', sans-serif;
+		text-align: left;
+		margin-left: 20px;
+	}
+
+	#login-buttons {
+		float: right;
+		margin-right: 50px;
+
+	}
+
+	button {
+		font-size: 16px;
+		background-color: #1B1464;
+		color: white;
+		border: none;
+		padding: 15px;
+		margin-left: 20px;
+	}
 }
