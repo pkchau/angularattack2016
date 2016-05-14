@@ -4,3 +4,4 @@ src/app/**/*.js
 src/app/**/*.js.map
 typings/
 dist/
+src/backend/env
