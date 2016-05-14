@@ -1,6 +1,11 @@
+#bkgd {
+	position: fixed;
+	margin-right: 25px;
+}
+
 img {
 	max-width: 100%;
-	height: auto;
+	max-height: auto;
 }
 
 #search {
@@ -24,5 +29,13 @@ input[type=submit] {
 	border: none;
 	border-radius: 5px;
 	padding: 8px;
+}
 
+input[type=submit]:hover {
+	font-size: 24px;
+	background: #e77f08;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 8px;
 }

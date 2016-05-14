@@ -24,6 +24,11 @@ button {
 	padding: 15px;
 	margin-top: 20px;
 	margin-left: 20px;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #130e48;
 }
 
 
@@ -31,4 +36,9 @@ button {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	color: white;
 }
+
+
+
+
