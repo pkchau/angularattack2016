@@ -31,8 +31,13 @@ button:hover {
 	background-color: #130e48;
 }
 
+button:active {
+	background-color: #130e48;
+	transform: translateY(2px);
+}
 
 #footer {
+	font: 10px;
 	position: fixed;
 	bottom: 0;
 	width: 100%;

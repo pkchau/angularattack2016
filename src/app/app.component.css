@@ -32,10 +32,10 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	font-size: 24px;
 	background: #e77f08;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	padding: 8px;
 }
+input[type=submit]:active {
+	background: #e77f08;
+	transform: translateY(2px);
+}
+
