@@ -1,7 +1,16 @@
-main {
-  padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  display: block;
+.header {
+	position: fixed;
+	top: 0 px;
+	left: 0 px;
+	width: 100%;
+	background: white;
+}
+
+.trippin-logo {
+	font-family: 'Biryani', sans-serif;
+	text-align: left;
+}
+
+button {
+	float: right;
 }
