@@ -72,7 +72,16 @@ input[type=submit]:active {
 }
 
 .events-list{
+	margin-top: 50px;
 	clear:both;
-	position: fixed;
 	top: 50%;
+	width: 100%;
+	border: solid 2px gray;
+	border-radius: 5px;
+}
+
+
+ul {
+	list-style-type: none;
+	padding: 5px;
 }
