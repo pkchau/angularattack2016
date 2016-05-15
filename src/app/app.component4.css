@@ -2,6 +2,7 @@ body {
 	font-family: Helvetica, sans-serif;
 }
 
+/*Packing Lists*/
 p {
 	font-size: 16px;
 	color: white;
@@ -12,7 +13,11 @@ p {
 
 #packing-main {
 	float:left;
-	padding-left: 150px;
+	padding-left: 150px;	
+}
+
+#transparent-box {
+	color: black; 
 }
 
 #packing-suggested {
@@ -22,15 +27,10 @@ p {
 
 #pack-item {
 	width: 100%;
-	border: 2px solid  #d1d1e0;
+	border: 2px solid #d1d1e0;
 	padding: 10px;
 	border-radius: 5px;
 	margin-bottom: 10px;
-}
-
-input {
-	border: none;
-	width: 70%;
 }
 
 ul {
@@ -38,7 +38,7 @@ ul {
 	padding: 5px;
 }
 
-.delete {
+.edit-items {
 	font-size: 14px;
 	margin-top: 0px;
 	margin-left: -0px;	
@@ -49,15 +49,17 @@ ul {
 	color: black;
 }
 
-.delete:hover {
+.edit-items:hover {
 	border: 1px black;
 	background-color:#d1d1e0;
 }
 
-.delete:active {
+.edit-items:active {
 	background-color:#d1d1e0;
 	transform: translateY(2px);
 }
+
+/*Add Item to Packing List*/
 
 input[type=text] {
 	border: solid black 1px;
@@ -66,18 +68,17 @@ input[type=text] {
 	color: #d1d1e0
 }
 
-
 #item-name {
 	float:left;
-	margin: 0px;
-}
-
-#submit-btn {
-	float:left;
-	margin-left: 5px;
 }
 
 #for-select {
+	float:left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#submit-btn {
 	float:left;
 }
 
@@ -105,10 +106,12 @@ input[type=submit]:active {
 	transform: translateY(2px);
 }
 
+/*Bottom page nav buttons*/
 #nav-btns {
 	position:absolute;
 	bottom: 10px;
 	width: 100%;
+	margin-top: 5px;
 }
 
 .goback {
