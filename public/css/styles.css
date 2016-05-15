@@ -1,4 +1,26 @@
 body {
-    background: #0147A7;
+    background: orange;
     color: #fff;
+}
+.event {
+	display: flex;
+	position: relative;
+	padding: 5px;
+}
+.glyphicon {
+    float: left;
+    vertical-align: text-bottom;
+}
+.thumbnail {
+	margin: 0 10px 0;
+}
+.input[type=text] {
+	display: inline-block;
+	position: relative;
+	margin: auto;
+	max-width: 100%;
+	border: 1px solid;
+	border-radius: 4px;
+	font-size: 24px;
+	padding: 8px;
 }

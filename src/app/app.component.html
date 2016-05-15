@@ -1,4 +1,52 @@
-<main>
-  <h1>Hello from Angular 2 App with Webpack</h1>
-  <img src="../../public/images/angular.png">
+<main class="container">
+  <div>
+    <h1>Build your itnerary with places to eat, explore and relax</h1>
+    <div class="btn-group btn-group-justified" role="group">
+      <div class="btn-group"> 
+        <div class="form">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" placeholder="Date Range" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+         </div>
+     </div>
+      
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Interests <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+         <li><a href="#">Food</a></li>
+         <li><a href="#">Concerts</a></li>
+         <li><a href="#">Arts & culture</a></li>
+         <li><a href="#">Shopping</a></li>
+         <li><a href="#">Outdoors</a></li>
+         <li><a href="#">Festivals</a></li>
+         <li><a href="#">Nightlife</a></li>
+         <li><a href="#">Sightseeing</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Ratings <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+        </ul>
+       </div>
+    </div>
+  </div>
+  <br>
+  <div class="flex-container">
+    <div class="event flex-item">
+    	<span class="glyphicon glyphicon-plus-sign flex-item" aria-hidden="true"></span>
+          <img src="#" alt="" class="thumbnail" />
+          <input type="text" name="list" class="flex-item" value="fill_in_from_events_selected">
+    </div>
+  </div>
 </main>
