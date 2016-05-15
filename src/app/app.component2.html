@@ -1,52 +1,46 @@
 <main class="container">
-  <div>
-    <h1>Build your itnerary with places to eat, explore and relax</h1>
-    <div class="btn-group btn-group-justified" role="group">
-      <div class="btn-group"> 
-        <div class="form">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" placeholder="Date Range" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-         </div>
-     </div>
-      
-      <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Interests <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-         <li><a href="#">Food</a></li>
-         <li><a href="#">Concerts</a></li>
-         <li><a href="#">Arts & culture</a></li>
-         <li><a href="#">Shopping</a></li>
-         <li><a href="#">Outdoors</a></li>
-         <li><a href="#">Festivals</a></li>
-         <li><a href="#">Nightlife</a></li>
-         <li><a href="#">Sightseeing</a></li>
-        </ul>
+      <img class ="trippin-logo" src="../../public/images/logo.svg" alt="Trippin logo" width = "100" height = "80">
+      <div id="login-buttons">
+        <button type="button">Sign Up</button>
+        <button type="button">Log In</button>
       </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Ratings <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-        </ul>
-       </div>
+    <h1>Build your itnerary with places to eat, explore and relax</h1>
+      <div id="filters">
+          <form action="add-items.asp">
+            <div id="item-name"> 
+              <input type="text" name="date" value="Date Range"><button type="button" class="delete"><span class="glyphicon glyphicon-calendar"></span></button>
+             </div>
+            <div id="for-select">
+              <select>
+                <option value="interests">Interests</option>
+                <option value="interests">Food</option>
+                <option value="interests">Concerts</option>
+                <option value="interests">Arts & Culture</option>
+                <option value="interests">Shopping</option>
+                <option value="interests">Outdoors</option>
+                <option value="interests">Festivals</option>
+                <option value="interests">Nightlife</option>
+                <option value="interests">Sightseeing</option>
+              </select>
+            </div>
+          <div id="for-select">
+          <select>
+            <option value="ratings">Ratings</option>
+            <option value="ratings">1 & up</option>
+            <option value="ratings">2 & up</option>
+            <option value="ratings">3 & up</option>
+            <option value="ratings">4 & up</option>
+          </select>
+          </div>
+        <div id="submit-btn">
+          <input type="submit" value="Filter">
+        </div>
+      </form>
     </div>
-  </div>
+
   <br>
-  <div class="flex-container">
-    <div class="event flex-item">
-    	<span class="glyphicon glyphicon-plus-sign flex-item" aria-hidden="true"></span>
-          <img src="#" alt="" class="thumbnail" />
+  <div class="events-list">
+      <button type="button" class="delete"><span class="glyphicon glyphicon-plus-sign flex-item" aria-hidden="true"></span></button>
           <input type="text" name="list" class="flex-item" value="fill_in_from_events_selected">
-    </div>
   </div>
 </main>

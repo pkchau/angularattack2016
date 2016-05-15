@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import '../../public/css/styles.css';
 @Component({
-  selector: 'my-app',
-  template: require('./app.component.html'),
-  styles: [require('./app.component.css')]
+  selector: 'events-page',
+  template: require('./app.component2.html'),
+  styles: [require('./app.component2.css')]
 })
-export class AppComponent { }
+export class AppComponent2 { }
 
 
 
