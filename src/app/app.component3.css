@@ -1,0 +1,76 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+#overview {
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+p {
+	font-size: 16px;
+	color: white;
+	background-color:  #c2c2d6;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#events {
+	width: 100%;
+	border: 2px solid  #d1d1e0;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+input {
+	border: none;
+	width: 70%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.delete {
+	font-size: 14px;
+	margin-top: 0px;
+	margin-left: 0px;	
+	border: none;
+	padding: 5px;
+	background-color: white;
+	color: black;
+}
+
+.delete:hover {
+	border: 1px black;
+	background-color:#d1d1e0;
+}
+
+.delete:active {
+	background-color:#d1d1e0;
+	transform: translateY(2px);
+}
+
+#nav-btns {
+	margin-top: 5px;
+}
+
+.goback {
+	margin-left: 0px;
+}
+
+.moveon {
+	float: right;
+	margin-right: 0px;
+	background: #F7931E;
+}
+
+.moveon:hover {
+	background-color: #e77f08;
+}
+
+.moveon:active {
+	background-color: #e77f08;
+	transform: translateY(2px);
+}

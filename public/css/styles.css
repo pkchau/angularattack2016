@@ -1,6 +1,4 @@
 #header {
-	position: fixed;
-	top: 0;
 	width: 100%;
 	background-color: white;
 }
@@ -8,11 +6,11 @@
 .trippin-logo {
 	font-family: 'Biryani', sans-serif;
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
 #login-buttons {
-	margin-right: 50px;
+	margin-right: 40px;
 	float: right;
 }
 
@@ -38,10 +36,10 @@ button:active {
 
 #footer {
 	font: 10px;
-	position: fixed;
-	bottom: 0;
 	width: 100%;
 	color: white;
+	position: fixed;
+	bottom: 0;
 }
 
 
