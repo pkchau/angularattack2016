@@ -1,6 +1,13 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
 node_modules
 npm-debug.log
 src/app/**/*.js
 src/app/**/*.js.map
 typings/
 dist/
+src/backend/env
+backend/config.py
