@@ -16,10 +16,11 @@ class YelpClient():
 
         self.client = Client(auth)
 
-    def search(self, location,categories):
+    def search(self, offset, location,categories):
         params = {
-            'category_filter' : ','.join(categories)
-                }
+            'category_filter' : ','.join(categories),
+            'offset' : offset 
+            }
         result = self.client.search(location, **params)
         return result
 
@@ -28,8 +29,10 @@ class YelpClient():
         return self.formatBusiness(result.business)
 
 
-    def getCategory(self, location, category):
-        result = self.search(location, [category])
+    def getCategory(self,numResults, location, category):
+        offset=0
+        result = self.search(offset, location, category)
+
         return self.getFormattedBusinesses(result.businesses) 
 
     def getActive(self, location):
@@ -71,14 +74,16 @@ class YelpClient():
         address = ','.join(business.location.display_address)
         phone = business.phone
         picture = business.image_url
-
+        source = 'yelp'
+        
         data = {
                 'name' : name,
-                'yelp_id' : business.id,
+                'external_id' : yelp_id,
                 'picture' : picture,
                 'rating' : rating,
                 'address' : address,
                 'phone' : phone,
+                'source': source,
                 'categories' : business.categories
                 }
 

@@ -1,9 +1,10 @@
 import json
 from flask import jsonify, request,session,g
-
 from flask.ext.login import login_required,login_user, logout_user,current_user
-
 from Trippin import app,models,login_manager,db
+from Trippin.yelp import YelpClient as YC 
+
+
 User=models.User
 
 def find_user(userEmail): 
@@ -13,7 +14,6 @@ def find_user(userEmail):
 
 #main page
 @app.route('/')
-@login_required
 def home():
     return jsonifiy({'status':'what are you doing here'})
 
@@ -41,4 +41,12 @@ def register():
     return jsonify({'user_id':userId})
 
 #handle trip information
-
+@app.route('/trip_query',methods=['POST'])
+def trip_maker():
+    location=request.get_json().get('location')
+    yelpCategories=request.get_json().get('yelp_categories')
+    
+    yelpLookup=YC.YelpClient()
+    foundEvents=[]
+    for category in list(yelpCategories):
+            map(lambda x: foundEvents.append(x))
