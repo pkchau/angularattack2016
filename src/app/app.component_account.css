@@ -20,7 +20,7 @@ p {
 /*Trips*/
 #all-trips {
 	border: solid 2px gray;
-	background-color: #d1d1e0;
+	background-color: rgba(209,209,224,0.4);
 	display:inline-block;
 	border-radius: 5px;
 }

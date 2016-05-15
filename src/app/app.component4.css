@@ -2,6 +2,12 @@ body {
 	font-family: Helvetica, sans-serif;
 }
 
+.trippin-logo {
+	font-family: 'Biryani', sans-serif;
+	margin-left: 40px;
+	float: left;
+}
+
 /*Packing Lists*/
 p {
 	font-size: 16px;
@@ -12,12 +18,11 @@ p {
 }
 
 #packing-main {
-	float:left;
-	padding-left: 150px;	
-}
+	padding-left: 150px;
+	display: inline-block;	
+	float: left;
+	clear:both;
 
-#transparent-box {
-	color: black; 
 }
 
 #packing-suggested {
@@ -108,10 +113,11 @@ input[type=submit]:active {
 
 /*Bottom page nav buttons*/
 #nav-btns {
-	position:absolute;
 	bottom: 10px;
 	width: 100%;
 	margin-top: 5px;
+	position:absolute;
+
 }
 
 .goback {
