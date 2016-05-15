@@ -18,19 +18,44 @@ class YelpClient():
 
     def search(self, location,categories):
         params = {
-            'category' : ','.join(categories)
+            'category_filter' : ','.join(categories)
                 }
         result = self.client.search(location, **params)
         return result
 
-    def getActive(self, location):
-        result = self.search(location, ['active'])
-        return getFormattedBusinesses(result.businesses) 
+    def getByYelpId(self, yelp_id):
+        result = self.client.get_business(yelp_id)
+        return self.formatBusiness(result.business)
 
+
+    def getCategory(self, location, category):
+        result = self.search(location, [category])
+        return self.getFormattedBusinesses(result.businesses) 
+
+    def getActive(self, location):
+        return self.getCategory(location, 'active')
+
+    def getArts(self, location):
+        return self.getCategory(location, 'arts')
+
+    def getFood(self, location):
+        return self.getCategory(location, 'food')
+
+    def getHotels(self, location):
+        return self.getCategory(location, 'hotelstravel')
+
+    def getLocalFlavor(self, location):
+        return self.getCategory(location, 'localflavor')
+
+    def getNightLife(self, location):
+        return self.getCategory(location, 'nightlife')
+
+    def getRestaurants(self, location):
+        return self.getCategory(location, 'restaurants')
 
     def getFormattedBusinesses(self, businesses):
         return list(map(lambda x : self.formatBusiness(x),
-                         filter(lambda x : not is_closed(x), 
+                         filter(lambda x : not x.is_closed, 
                                 businesses)))
 
 
@@ -48,11 +73,13 @@ class YelpClient():
         picture = business.image_url
 
         data = {
+                'name' : name,
                 'yelp_id' : business.id,
                 'picture' : picture,
                 'rating' : rating,
                 'address' : address,
-                'phone' : phone
+                'phone' : phone,
+                'categories' : business.categories
                 }
 
         return data
