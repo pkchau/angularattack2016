@@ -40,4 +40,5 @@ def register():
     userId=find_user(newUser.email).user_id
     return jsonify({'user_id':userId})
 
+#handle trip information
 
