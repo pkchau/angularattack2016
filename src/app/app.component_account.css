@@ -1,21 +1,44 @@
 body {
 	font-family: Helvetica, sans-serif;
+	text-align: center;
+}
+
+#header {
+	text-align: left;
+	padding: 10px;
+}
+
+#trip {
+	text-align: center;
+}
+
+p {
+	margin-top: 20px;
+	float: right;
 }
 
 /*Trips*/
+#all-trips {
+	border: solid 2px gray;
+	background-color: #d1d1e0;
+	display:inline-block;
+	border-radius: 5px;
+}
+
 
 ul {
 	list-style-type: none;
 	padding: 5px;
-	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 
 li {
 	padding: 5px;
-	border: solid 2px #d1d1e0;
+	border: solid 2px gray;
 	border-radius: 5px;
 	margin-bottom: 10px;
-	float:left;
-	clear:left;
+
+	background-color: white;
 }
