@@ -6,8 +6,8 @@ from flask.ext.login import login_required,login_user, logout_user,current_user
 from Trippin import app,models,login_manager,db
 User=models.User
 
-def find_user(user): 
-    userCheck=User.query.filter_by(email=user).first()
+def find_user(userEmail): 
+    userCheck=User.query.filter_by(email=userEmail).first()
     db.session.commit()
     return userCheck
 
@@ -30,12 +30,14 @@ def before_request():
 #handle registration
 @app.route('/register',methods=['POST'])
 def register(): 
-    if find_user(request.get_json().get('email')) is not None:
-        return jsonify({'status':'already registered'})
+    foundUser=find_user(request.get_json().get('email'))
+    if foundUser is not None:    
+        return jsonify({'user_id':foundUser.user_id})
+    
     newUser=User(email=request.get_json().get('email'),first_name=request.get_json().get('first_name'),last_name=request.get_json().get('last_name'))
     db.session.add(newUser)
     db.session.commit()
-
-    return jsonify({'status':'registered'})
+    userId=find_user(newUser.email).user_id
+    return jsonify({'user_id':userId})
 
 
