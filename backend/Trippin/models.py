@@ -14,4 +14,11 @@ class User(db.Model):
     def get_id(self): 
         return str(self.user_id)
     
+class Trip(db.Model): 
+    __tablename__="trips"
+    trip_id=db.Column(db.Integer,primary_key=True)
+    user_id=db.Column(db.Integer,index=True)
+    location=db.Column(db.String(255))
+    startDate=db.Column(db.DateTime)
+    endDate=db.Column(db.DateTime)
 

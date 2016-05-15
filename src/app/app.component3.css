@@ -1,41 +1,76 @@
-#bkgd {
-	position: fixed;
-	margin-right: 25px;
+body {
+	font-family: Helvetica, sans-serif;
 }
 
-img {
-	max-width: 100%;
-	max-height: auto;
+#overview {
+	margin-left: 400px;
+	margin-right: 400px;
 }
 
-#search {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-
-input[type=text] {
-	border: 1px solid;
-	border-radius: 4px;
-	font-size: 24px;
-	padding: 8px;
-}
-
-input[type=submit] {
-	font-size: 24px;
-	background: #F7931E;
+p {
+	font-size: 16px;
 	color: white;
-	border: none;
+	background-color:  #c2c2d6;
 	border-radius: 5px;
-	padding: 8px;
+	padding: 20px;
 }
 
-input[type=submit]:hover {
-	background: #e77f08;
+#events {
+	width: 100%;
+	border: 2px solid  #d1d1e0;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
 }
-input[type=submit]:active {
-	background: #e77f08;
+
+input {
+	border: none;
+	width: 70%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.delete {
+	font-size: 14px;
+	margin-top: 0px;
+	margin-left: 0px;	
+	border: none;
+	padding: 5px;
+	background-color: white;
+	color: black;
+}
+
+.delete:hover {
+	border: 1px black;
+	background-color:#d1d1e0;
+}
+
+.delete:active {
+	background-color:#d1d1e0;
 	transform: translateY(2px);
 }
 
+#nav-btns {
+	margin-top: 5px;
+}
+
+.goback {
+	margin-left: 0px;
+}
+
+.moveon {
+	float: right;
+	margin-right: 0px;
+	background: #F7931E;
+}
+
+.moveon:hover {
+	background-color: #e77f08;
+}
+
+.moveon:active {
+	background-color: #e77f08;
+	transform: translateY(2px);
+}
