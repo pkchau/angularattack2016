@@ -6,7 +6,6 @@
 
 .trippin-logo {
 	font-family: 'Biryani', sans-serif;
-	text-align: left;
 	margin-left: 40px;
 }
 
@@ -36,7 +35,6 @@ button:active {
 }
 
 /*footer with citation*/
-
 #footer {
 	font: 10px;
 	width: 100%;
