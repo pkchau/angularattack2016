@@ -35,30 +35,7 @@ def register():
     newUser=User(email=request.get_json().get('email'),first_name=request.get_json().get('first_name'),last_name=request.get_json().get('last_name'))
     db.session.add(newUser)
     db.session.commit()
-    login_user(newUser)
 
     return jsonify({'status':'registered'})
 
 
-#handle login 
-@app.route('/login', methods=["POST"])
-def login(): 
-    if g.user is not None and g.user.is_authenticated(): 
-        logout_user()
-    
-    session['remember_me']=True
-    foundUser=find_user(request.form['email'])
-        
-    if foundUser is None:
-        return jsonify({'status': 'No Login'})
-
-    login_user(foundUser,remember=True)
-    return jsonify({'status':'Logged In'})
-
-
-#handle log out
-@app.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    return Response(jsonify({'status':'logged out'}))    
