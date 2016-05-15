@@ -22,4 +22,21 @@ input[type=text] {
 	padding: 8px;
 }
 
+input[type=submit] {
+	font-size: 24px;
+	background: #F7931E;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 8px;
+}
+
+input[type=submit]:hover {
+	background: #e77f08;
+}
+
+input[type=submit]:active {
+	background: #e77f08;
+	transform: translateY(2px);
+}
 
