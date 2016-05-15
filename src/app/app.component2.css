@@ -1,5 +1,15 @@
+body {
+	font-family: Helvetica, sans-serif;	
+}
 
+#filters {
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
 
+p {
+	font-size: 24px;
+}
 
 /*Input date range*/
 input[type=text] {
