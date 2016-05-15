@@ -1,0 +1,98 @@
+img {
+	z-index: -2;
+	position: fixed;
+	max-width: 100%;
+}
+
+.trippin-logo {
+	background: none;
+}
+
+.center {
+	text-align: center;
+	color: white;
+}
+
+#signup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 100%;
+	height: auto;
+	border: 3px solid white;
+	border-radius: 5px;
+	padding: 40px;
+	margin: 20px;
+	background:rgba(255, 255, 255, 0.25);
+	color: white;
+}
+
+#signup input {
+	margin-bottom: 10px;
+	border-color: white;
+}
+
+#signup input, textarea {
+  font-size:18px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  border:2px solid white !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+  background-image:none;
+  color: white !important;
+}
+
+
+#login-buttons {
+	margin-right: 40px;
+	float: right;
+}
+
+form {
+  padding: 40px;
+  max-width: 100%;
+  border-radius: 4px;
+  color: white;
+}
+
+.in {
+padding: 10px;	
+background: #3a7999 !important;
+color: #fff !important;  
+font-size: 16px !important;
+font-weight: bold !important;
+border: none !important;
+border-radius: 5px !important;
+-webkit-transition: all 500ms ease !important;
+transition: all 500ms ease !important;
+}    
+
+.in:hover {
+background: rgba(0,0,0,0) !important;
+color: #3a7999 !important;
+box-shadow: inset 0 0 0 3px #3a7999 !important;
+}
+
+.within {
+display: block;
+margin-left: auto;
+margin-right: auto; 
+padding: 10px;	
+background: #3a7999 !important;
+color: #fff !important;  
+font-size: 16px !important;
+font-weight: bold !important;
+border: none !important;
+border-radius: 5px !important;
+-webkit-transition: all 500ms ease !important;
+transition: all 500ms ease !important;
+}    
+
+.within:hover {
+background: rgba(0,0,0,0) !important;
+color: #3a7999 !important;
+box-shadow: inset 0 0 0 3px #3a7999 !important;
+}
