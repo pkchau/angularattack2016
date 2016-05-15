@@ -46,12 +46,8 @@ def trip_query():
     numResults=int(request.get_json().get('numResults'))
     location=request.get_json().get('location')
     yelpCategories=request.get_json().get('yelp_categories').split(',')
-    print(yelpCategories,type(yelpCategories))
-    print(location,type(location))
-    print(numResults,type(numResults))    
     yelpLookup=YC.YelpClient()
-    print yelpLookup.getCategory(numResults,location,yelpCategories))
-    return jsonify(yelpLookup.getCategory(numResults,location,yelpCategories))
+    return jsonify({'output':yelpLookup.getCategory(numResults,location,yelpCategories)})
 
 
 #save trip information
