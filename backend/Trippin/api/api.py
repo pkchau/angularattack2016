@@ -43,11 +43,14 @@ def register():
 #handle trip information
 @app.route('/trip_query',methods=['POST'])
 def trip_query():
-    numResults=request.get_json().get('numResults')
+    numResults=int(request.get_json().get('numResults'))
     location=request.get_json().get('location')
-    yelpCategories=request.get_json().get('yelp_categories')
-    
+    yelpCategories=request.get_json().get('yelp_categories').split(',')
+    print(yelpCategories,type(yelpCategories))
+    print(location,type(location))
+    print(numResults,type(numResults))    
     yelpLookup=YC.YelpClient()
+    print yelpLookup.getCategory(numResults,location,yelpCategories))
     return jsonify(yelpLookup.getCategory(numResults,location,yelpCategories))
 
 
