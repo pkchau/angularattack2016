@@ -1,11 +1,12 @@
 img {
-	background-image: url(../../public/images/homepage_mainpic.jpg);
 	z-index: -2;
 	position: fixed;
+	max-width: 100%;
 }
 
 .trippin-logo {
 	background: none;
+	z-index: 1;
 }
 
 #search {
