@@ -1,0 +1,144 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+.trippin-logo {
+	font-family: 'Biryani', sans-serif;
+	margin-left: 40px;
+	float: left;
+}
+
+/*Packing Lists*/
+p {
+	clear: both;
+	font-size: 20px;
+	color: white;
+	background-color:  #c2c2d6;
+	border-radius: 5px;
+	padding: 20px;
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+}
+
+#packing-main {
+	padding-left: 150px;
+	display: inline-block;	
+	float: left;
+	clear:both;
+
+}
+
+#packing-suggested {
+	float: right;
+	padding-right: 150px;
+}
+
+#pack-item {
+	width: 100%;
+	border: 2px solid #d1d1e0;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 5px;
+}
+
+.edit-items {
+	font-size: 14px;
+	margin-top: 0px;
+	margin-left: -0px;	
+	margin-right: 5px;
+	border: none;
+	padding: 5px;
+	background-color: white;
+	color: black;
+}
+
+.edit-items:hover {
+	border: 1px black;
+	background-color:#d1d1e0;
+}
+
+.edit-items:active {
+	background-color:#d1d1e0;
+	transform: translateY(2px);
+}
+
+/*Add Item to Packing List*/
+
+input[type=text] {
+	border: solid black 1px;
+	border-radius: 5px;
+	padding: 5px;
+	color: #d1d1e0
+}
+
+#item-name {
+	float:left;
+}
+
+#for-select {
+	float:left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#submit-btn {
+	float:left;
+}
+
+select{
+	border: solid black 1px;
+	border-radius: 5px;	
+	padding: 5px;
+	font-family: helvetica, sans-serif;
+	color: #d1d1e0;
+}
+
+input[type=submit] {
+	background: #F7931E;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+input[type=submit]:hover {
+	background: #e77f08;
+}
+input[type=submit]:active {
+	background: #e77f08;
+	transform: translateY(2px);
+}
+
+/*Bottom page nav buttons*/
+#nav-btns {
+	bottom: 10px;
+	width: 100%;
+	margin-top: 5px;
+	position:absolute;
+
+}
+
+.goback {
+	margin-left: 150px;
+}
+
+.moveon {
+	float: right;
+	margin-right: 150px;
+	background: #F7931E;
+}
+
+.moveon:hover {
+	background-color: #e77f08;
+}
+
+.moveon:active {
+	background-color: #e77f08;
+	transform: translateY(2px);
+}
