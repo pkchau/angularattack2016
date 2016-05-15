@@ -1,11 +1,11 @@
-#bkgd {
+img {
+	background-image: url(../../public/images/homepage_mainpic.jpg);
+	z-index: -2;
 	position: fixed;
-	margin-right: 25px;
 }
 
-img {
-	max-width: 100%;
-	max-height: auto;
+.trippin-logo {
+	background: none;
 }
 
 #search {
