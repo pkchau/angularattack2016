@@ -29,7 +29,8 @@ p {
 ul {
 	list-style-type: none;
 	padding: 5px;
-	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 
@@ -38,7 +39,6 @@ li {
 	border: solid 2px gray;
 	border-radius: 5px;
 	margin-bottom: 10px;
-	float:left;
-	clear:left;
+
 	background-color: white;
 }
