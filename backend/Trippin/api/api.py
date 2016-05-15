@@ -32,21 +32,28 @@ def before_request():
 def register(): 
     foundUser=find_user(request.get_json().get('email'))
     if foundUser is not None:    
-        return jsonify({'user_id':foundUser.user_id})
+        return jsonify({'user_id':foundUser.user_id,'email':foundUser.email,'first_name':foundUser.first_name,'last_name':foundUser.last_name})
     
     newUser=User(email=request.get_json().get('email'),first_name=request.get_json().get('first_name'),last_name=request.get_json().get('last_name'))
     db.session.add(newUser)
     db.session.commit()
-    userId=find_user(newUser.email).user_id
-    return jsonify({'user_id':userId})
+    newUser=find_user(newUser.email)
+    return jsonify({'user_id':newUser.user_id,'email':newUser.email,'first_name':newUser.first_name,'last_name':newUser.last_name})
 
 #handle trip information
 @app.route('/trip_query',methods=['POST'])
-def trip_maker():
+def trip_query():
+    numResults=request.get_json().get('numResults')
     location=request.get_json().get('location')
     yelpCategories=request.get_json().get('yelp_categories')
     
     yelpLookup=YC.YelpClient()
-    foundEvents=[]
-    for category in list(yelpCategories):
-            map(lambda x: foundEvents.append(x))
+    return jsonify(yelpLookup.getCategory(numResults,location,yelpCategories))
+
+
+#save trip information
+
+        
+
+
+
