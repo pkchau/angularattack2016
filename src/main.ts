@@ -1,7 +1,7 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import { AppComponent, OverviewPage, PackingListPage, AccountOverviewPage } from './app';
+import { AppComponent, AppComponent2, OverviewPage, PackingListPage, AccountOverviewPage, AccountTripPage, ComponentLoginPage } from './app';
 if (process.env.ENV === 'production') {
   enableProdMode();
 }
-bootstrap(AppComponent,[])
+bootstrap(AppComponent2,[])
